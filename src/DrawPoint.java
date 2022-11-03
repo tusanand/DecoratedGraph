@@ -2,6 +2,10 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
+/**
+ * This class draws the dots
+ *
+ */
 public class DrawPoint implements DrawInterface {
     private JPanel panel;
     private Graphics graphics;
@@ -10,6 +14,10 @@ public class DrawPoint implements DrawInterface {
         this.panel = panel;
     }
 
+    /**
+     * This method draws the point
+     * @param randomIntegerInfo
+     */
     public void draw(RandomIntegerInfo randomInteger) {
         this.graphics = this.panel.getGraphics();
 

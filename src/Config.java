@@ -1,5 +1,9 @@
 import java.awt.Font;
 
+/**
+ * @author Tushar Sameer Anand
+ * This class stores all the constant values
+ */
 public final class Config {
 
 	private Config() {

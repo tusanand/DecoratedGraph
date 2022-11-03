@@ -1,3 +1,7 @@
+/**
+ * This class stores information about the dots drawn
+ *
+ */
 public class RandomIntegerInfo {
 	private int previousRandomNumber;
     private int currentRandomNumber;

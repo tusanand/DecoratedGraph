@@ -1,6 +1,10 @@
 import java.util.Observable;
 import java.util.Random;
 
+/**
+ * This class generates random number
+ *
+ */
 @SuppressWarnings("deprecation")
 public class RandomNumberGenerator extends Observable {
     private int count = 0;
@@ -10,6 +14,10 @@ public class RandomNumberGenerator extends Observable {
     	randomIntegerInfo = new RandomIntegerInfo();
     }
 
+    /**
+     * This method generates random number
+     * @throws InterruptedException
+     */
     public void generateNumbers() throws InterruptedException {
         for (int i = 0; i < Config.TOTAL_ENTRIES; ++i) {
             Random random = new Random();
@@ -28,10 +36,17 @@ public class RandomNumberGenerator extends Observable {
         }
     }
     
+    /**
+     * This method resets the application for the next run
+     */
     public void reset() {
     	count = 0;
     }
     
+    /**
+     * This method returns the random number generated
+     * @return
+     */
     public RandomIntegerInfo getGeneratedData() {
     	return randomIntegerInfo;
     }

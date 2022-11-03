@@ -1,9 +1,8 @@
 import java.awt.EventQueue;
 
-/*This class launches the application
- *
- * @author Tushar Anand
- *
+/**
+ * @author Tushar Sameer Anand
+ * This is the main class that launches the application
  */
 public class DecoratedGraph {
 	 /**

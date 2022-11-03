@@ -2,6 +2,9 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
+/**
+ * This class draws the line to connect two dots
+ */
 public class DrawLine implements DrawInterface {
     private Graphics graphics;
     private JPanel panel;
@@ -10,6 +13,10 @@ public class DrawLine implements DrawInterface {
         this.panel = panel;
     }
 
+    /**
+     * This method draws the line
+     * @param randomIntegerInfo
+     */
     public void draw(RandomIntegerInfo randomIntegerInfo) {
     	if(randomIntegerInfo.getPreviousRandomNumber() == -1) {
     		return;

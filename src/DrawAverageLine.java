@@ -4,6 +4,10 @@ import javax.swing.JPanel;
 
 import java.awt.Color;
 
+
+/**
+ * This class draws the average line
+ */
 public class DrawAverageLine implements DrawAverageLineInterface {
     private Graphics graphics;
     private JPanel panel;
@@ -12,6 +16,10 @@ public class DrawAverageLine implements DrawAverageLineInterface {
         this.panel = panel;
     }
 
+    /**
+     * This method draws the average line
+     * @param average
+     */
     public void draw(double average) {
         this.graphics = this.panel.getGraphics();
         graphics.setColor(Color.RED);

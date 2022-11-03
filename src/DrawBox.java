@@ -2,6 +2,9 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
+/**
+ * This class draws the box
+ */
 public class DrawBox extends DrawDecorator {
     protected JPanel panel;
     protected Graphics graphics;
@@ -10,6 +13,10 @@ public class DrawBox extends DrawDecorator {
         this.panel = panel;
     }
 
+    /**
+     * This method draws the box
+     * @param randomIntegerInfo
+     */
     public void draw(RandomIntegerInfo randomIntegerInfo) {
     	super.draw(randomIntegerInfo);
         this.graphics = this.panel.getGraphics();

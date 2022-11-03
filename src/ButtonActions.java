@@ -6,7 +6,6 @@ import javax.swing.JFrame;
 
 /**
  * This class invokes the button action.
- *
  */
 public class ButtonActions implements ActionListener {
 	protected JFrame frame;
@@ -31,7 +30,6 @@ public class ButtonActions implements ActionListener {
 				AverageEvaluator.getInstance().reset();
 				generator.generateNumbers();
 			} catch (InterruptedException e1) {
-				// TODO: Do something with the exception
 				e1.printStackTrace();
 			}
 		}

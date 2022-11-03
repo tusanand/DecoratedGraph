@@ -3,6 +3,10 @@ import java.util.Observer;
 
 import javax.swing.JPanel;
 
+/**
+ * This class adds panel to the frame
+ *
+ */
 @SuppressWarnings("deprecation")
 public class Graph extends JPanel implements Observer {
 	private String graphType;
@@ -35,6 +39,10 @@ public class Graph extends JPanel implements Observer {
 		}
 	}
 	
+	/**
+	 * This method sets the different types of panels
+	 * @param graphType
+	 */
 	public void setGraphType(String graphType) {
 		this.graphType = graphType;
 	}
