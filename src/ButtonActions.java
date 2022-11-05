@@ -7,8 +7,7 @@ import javax.swing.JFrame;
 /**
  * This class invokes the button action.
  */
-public class ButtonActions implements ActionListener {
-	protected JFrame frame;
+public class ButtonActions extends JFrame implements ActionListener {
 	protected Graph graphPlain;
 	protected Graph graphBoxed;
 	protected Graph graphBarred;

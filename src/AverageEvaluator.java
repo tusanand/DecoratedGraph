@@ -4,11 +4,13 @@
  */
 public class AverageEvaluator {
     private int sum;
+    private int count;
 
     private static AverageEvaluator instance;
 
     private AverageEvaluator() {
         sum = 0;
+        count = 0;
     }
 
     /**
@@ -27,6 +29,7 @@ public class AverageEvaluator {
      * @param randomInteger
      */
     public void computeSum(int randomInteger) {
+    	count++;
     	sum += randomInteger;
     }
 
@@ -35,7 +38,7 @@ public class AverageEvaluator {
      * @return
      */
     public double getAverage() {
-        return sum / Config.TOTAL_ENTRIES;
+        return sum / count;
     }
     
     /**
@@ -43,5 +46,6 @@ public class AverageEvaluator {
      */
     public void reset() {
     	sum = 0;
+    	count = 0;
     }
 }

@@ -15,7 +15,7 @@ public class Graph extends JPanel implements Observer {
     }
 
 	@Override
-	public void update(Observable o, Object arg) {
+	public void update(Observable o, Object arg) {	
 		RandomIntegerInfo randomIntegerInfo = ((RandomNumberGenerator) o).getGeneratedData();
 		DrawInterface drawPoint = new DrawPoint(this);
 		DrawBox drawBox = new DrawBox(this);

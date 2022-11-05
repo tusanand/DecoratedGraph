@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 public class InitializeFrame extends ButtonActions {
 	public InitializeFrame() {
 		this.initialize();
-		this.frame.setVisible(true);
+		this.setVisible(true);
 	}
 
   /**
@@ -18,12 +18,11 @@ public class InitializeFrame extends ButtonActions {
    */
   @SuppressWarnings("deprecation")
 public void initialize() {
-    frame = new JFrame();
-    frame.setTitle("Random Number Graph Generator");
-    frame.setBounds(Config.WINDOW_START_X, Config.WINDOW_START_Y, Config.WINDOW_WIDTH, Config.WINDOW_HEIGHT);
-    frame.setResizable(false);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.getContentPane().setLayout(null);
+    this.setTitle("Random Number Graph Generator");
+    this.setBounds(Config.WINDOW_START_X, Config.WINDOW_START_Y, Config.WINDOW_WIDTH, Config.WINDOW_HEIGHT);
+    this.setResizable(false);
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    this.getContentPane().setLayout(null);
 
     graphPlain = new Graph();
     graphPlain.setBounds(
@@ -31,7 +30,7 @@ public void initialize() {
         Config.PADDING,
         Config.WINDOW_WIDTH - 25,
         Config.GRAPH_HEIGHT);
-    frame.getContentPane().add(graphPlain);
+    this.getContentPane().add(graphPlain);
     graphPlain.setGraphType(Config.GRAPH_PLAIN);
     graphPlain.setBorder(BorderFactory.createLineBorder(Color.black));
 
@@ -41,7 +40,7 @@ public void initialize() {
         Config.GRAPH_HEIGHT + 2 * Config.PADDING,
         Config.WINDOW_WIDTH - 25,
         Config.GRAPH_HEIGHT);
-    frame.getContentPane().add(graphBoxed);
+    this.getContentPane().add(graphBoxed);
     graphBoxed.setGraphType(Config.GRAPH_BOX);
     graphBoxed.setBorder(BorderFactory.createLineBorder(Color.black));
 
@@ -51,7 +50,7 @@ public void initialize() {
         2 * Config.GRAPH_HEIGHT + 3 * Config.PADDING,
         Config.WINDOW_WIDTH - 25,
         Config.GRAPH_HEIGHT);
-    frame.getContentPane().add(graphBarred);
+    this.getContentPane().add(graphBarred);
     graphBarred.setGraphType(Config.GRAPH_BAR);
     graphBarred.setBorder(BorderFactory.createLineBorder(Color.black));
 
@@ -63,7 +62,7 @@ public void initialize() {
         Config.WINDOW_WIDTH - 25,
         Config.BUTTON_HEIGHT);
     btnRun.addActionListener(this);
-    frame.getContentPane().add(btnRun);
+    this.getContentPane().add(btnRun);
     
     generator.addObserver(graphPlain);
     generator.addObserver(graphBoxed);
